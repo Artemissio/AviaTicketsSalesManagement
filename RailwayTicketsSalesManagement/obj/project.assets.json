@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "MiddlewareLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MiddlewareLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiddlewareLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MiddlewareLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MiddlewareLibrary/MiddlewareLibrary.csproj",
+      "msbuildProject": "../MiddlewareLibrary/MiddlewareLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "MiddlewareLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MI\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement.csproj",
+      "projectName": "RailwayTicketsSalesManagement",
+      "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement.csproj",
+      "packagesPath": "C:\\Users\\MI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj": {
+              "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
