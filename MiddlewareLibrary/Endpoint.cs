@@ -6,7 +6,7 @@ namespace MiddlewareLibrary
     {
         public string Name { get; set; }
 
-        public Endpoint()
+        public Endpoint() : base()
         {
             ID = "endpoint-" + Guid.NewGuid().ToString();
         }

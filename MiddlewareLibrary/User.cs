@@ -12,7 +12,7 @@ namespace MiddlewareLibrary
         public string Password { get; }
         public List<Place> BookedPlaces { get; }
 
-        public User()
+        public User() : base()
         {
             ID = "user-" + Guid.NewGuid().ToString();
             BookedPlaces = new List<Place>();

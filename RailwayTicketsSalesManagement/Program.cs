@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiddlewareLibrary;
+using System;
 
 namespace RailwayTicketsSalesManagement
 {
@@ -7,6 +8,8 @@ namespace RailwayTicketsSalesManagement
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Console.ReadKey();
         }
     }
 }

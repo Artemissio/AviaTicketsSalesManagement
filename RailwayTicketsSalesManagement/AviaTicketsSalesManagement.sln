@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailwayTicketsSalesManagement", "RailwayTicketsSalesManagement.csproj", "{B9A0D433-0062-456E-BE32-D8E4E894F988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AviaTicketsSalesManagement", "AviaTicketsSalesManagement.csproj", "{B9A0D433-0062-456E-BE32-D8E4E894F988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareLibrary", "..\MiddlewareLibrary\MiddlewareLibrary.csproj", "{6AA9BFBE-1921-406C-8EBE-FFDAFED7D863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareLibrary", "..\MiddlewareLibrary\MiddlewareLibrary.csproj", "{6AA9BFBE-1921-406C-8EBE-FFDAFED7D863}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

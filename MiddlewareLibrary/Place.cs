@@ -4,19 +4,22 @@ namespace MiddlewareLibrary
 {
     public class Place : Entity
     {
-        public Train Train { get; }
+        public Plane Plane { get; }
         public decimal Price { get; }
         public bool IsBooked { get; private set; }
+        public bool IsBought { get; private set; }
         public User Customer { get; private set; }
 
-        public Place()
+        public Place() : base()
         {
             ID = "place-" + Guid.NewGuid().ToString();
+
+            IsBooked = IsBought = false;
         }
 
-        public Place(Train train, decimal price) : this()
+        public Place(Plane train, decimal price) : this()
         {
-            Train = train;
+            Plane = train;
             Price = price;
         }
 
@@ -33,10 +36,23 @@ namespace MiddlewareLibrary
             }
         }
 
+        public void Buy(User user)
+        {
+            try
+            {
+                Book(user);
+                IsBought = true;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public void CancelBooking()
         {
             Customer = null;
-            IsBooked = false;
+            IsBought = IsBooked = false;
         }
     }
 }

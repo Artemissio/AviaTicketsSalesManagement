@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement.csproj",
-      "projectName": "RailwayTicketsSalesManagement",
-      "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement.csproj",
+      "projectUniqueName": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
+      "projectName": "AviaTicketsSalesManagement",
+      "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
       "packagesPath": "C:\\Users\\MI\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\obj\\",
       "projectStyle": "PackageReference",

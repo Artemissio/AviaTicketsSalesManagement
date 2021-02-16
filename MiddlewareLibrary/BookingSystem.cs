@@ -6,93 +6,103 @@ namespace MiddlewareLibrary
 {
     public class BookingSystem
     {
-        public IReadOnlyList<Passage> Passages => _passages.AsReadOnly();
+        public IReadOnlyList<Flight> Flights => _flights.AsReadOnly();
 
-        private readonly List<Passage> _passages;
-        private readonly List<Train> _trains;
+        private readonly List<Flight> _flights;
+        private readonly List<Plane> _planes;
         private readonly List<User> _customers;
 
         public BookingSystem()
         {
-            _passages = new List<Passage>();
-            _trains = new List<Train>();
+            _flights = new List<Flight>();
+            _planes = new List<Plane>();
             _customers = new List<User>();
         }
 
-        public Passage GetPassage(int index)
+        public Flight GetFlight(int index)
         {
-            return _passages[index];
+            return _flights[index];
         }
 
-        public Passage GetPassage(string id)
+        public Flight GetFlight(string id)
         {
-            return _passages.First(x => x.ID == id);
+            return _flights.First(x => x.ID == id);
         }
 
-        public void AddPassage(Passage passage)
+        public void AddFlight(Flight flight)
         {
-            _passages.Add(passage);
+            _flights.Add(flight);
         }
 
-        public void RemovePassage(string id)
+        public void RemoveFlight(string id)
         {
-            var passage = _passages.FirstOrDefault(x => x.ID == id);
+            var flight = _flights.FirstOrDefault(x => x.ID == id);
 
-            if (passage is not null)
+            if (flight is not null)
             {
-                _passages.Remove(passage);
+                _flights.Remove(flight);
 
-                GetTrainsByPassage(id).ForEach(x => RemoveTrain(x.ID));
+                GetPlanesByFlight(id).ForEach(x => RemovePlane(x.ID));
             }
         }
 
-        public void EditPassage(Passage passage)
+        public void EditFlight(string id, Flight flight)
         {
-            RemovePassage(passage.ID);
-            AddPassage(passage);
+            RemoveFlight(id);
+            AddFlight(flight);
         }
 
-        public List<Passage> GetPassagesByDeparture(Endpoint departure)
+        public List<Flight> GetFlightsByDeparture(Endpoint departure)
         {
-            return _passages.Where(x => x.Departure == departure).ToList();
+            return _flights.Where(x => x.Departure == departure).ToList();
         }
 
-        public List<Passage> GetPassagesByDestination(Endpoint destination)
+        public List<Flight> GetFlightByDestination(Endpoint destination)
         {
-            return _passages.Where(x => x.Destination == destination).ToList();
+            return _flights.Where(x => x.Destination == destination).ToList();
         }
 
-        public void AddTrain(Train train)
+        public void AddPlane(Plane plane)
         {
-            _trains.Add(train);
+            _planes.Add(plane);
         }
 
-        public void RemoveTrain(string trainId)
+        public void RemovePlane(string planeId)
         {
-            var train = _trains.FirstOrDefault(x => x.ID == trainId);
+            var plane = _planes.FirstOrDefault(x => x.ID == planeId);
 
-            if (train is not null)
+            if (plane is not null)
             {
-                _trains.Remove(train);
+                _planes.Remove(plane);
             }
         }
 
-        public void EditTrain(Train train)
+        public void EditPlane(string id, Plane plane)
         {
-            RemoveTrain(train.ID);
-            AddTrain(train);
+            RemovePlane(id);
+            AddPlane(plane);
         }
 
-        public List<Train> GetTrainsByPassage(string passageId)
+        public List<Plane> GetPlanesByFlight(string flightId)
         {
-            var passage = GetPassage(passageId);
+            var flight = GetFlight(flightId);
 
-            if (passage is null)
+            if (flight is null)
             {
                 throw new Exception("This passage does not exist");
             }
 
-            return _trains.Where(x => x.Passage.ID == passageId).ToList();
+            return _planes.Where(x => x.Flight.ID == flightId).ToList();
+        }
+
+        public void Register(User user)
+        {
+            if (_customers.Any(x => x.Login == user.Login))
+            {
+                throw new Exception($"User with login '{user.Login}' already exists");
+            }
+
+            _customers.Add(user);
         }
 
         public User Login(string login, string password)
@@ -110,6 +120,11 @@ namespace MiddlewareLibrary
             }
 
             return user;
+        }
+
+        public void ChangeUserSettings(string id, User user)
+        {
+
         }
     }
 }
