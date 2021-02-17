@@ -1,0 +1,7 @@
+C:\Users\MI\Documents\Avia\AviaTicketsSalesManagement.exe
+C:\Users\MI\Documents\Avia\AviaTicketsSalesManagement.dll
+C:\Users\MI\Documents\Avia\AviaTicketsSalesManagement.deps.json
+C:\Users\MI\Documents\Avia\AviaTicketsSalesManagement.runtimeconfig.json
+C:\Users\MI\Documents\Avia\AviaTicketsSalesManagement.pdb
+C:\Users\MI\Documents\Avia\MiddlewareLibrary.dll
+C:\Users\MI\Documents\Avia\MiddlewareLibrary.pdb

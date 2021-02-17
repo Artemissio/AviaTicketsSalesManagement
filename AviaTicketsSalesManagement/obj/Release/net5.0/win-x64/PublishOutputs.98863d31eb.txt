@@ -1,0 +1,3 @@
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\AviaTicketsSalesManagement\bin\Release\net5.0\win-x64\publish\AviaTicketsSalesManagement.pdb
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\AviaTicketsSalesManagement\bin\Release\net5.0\win-x64\publish\MiddlewareLibrary.pdb
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\AviaTicketsSalesManagement\bin\Release\net5.0\win-x64\publish\AviaTicketsSalesManagement.exe

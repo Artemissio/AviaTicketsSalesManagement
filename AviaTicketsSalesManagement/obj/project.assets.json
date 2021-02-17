@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
+      "projectUniqueName": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\AviaTicketsSalesManagement\\AviaTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
       "projectName": "AviaTicketsSalesManagement",
-      "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
+      "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\AviaTicketsSalesManagement\\AviaTicketsSalesManagement\\AviaTicketsSalesManagement.csproj",
       "packagesPath": "C:\\Users\\MI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\RailwayTicketsSalesManagement\\obj\\",
+      "outputPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\AviaTicketsSalesManagement\\AviaTicketsSalesManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,8 +58,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj": {
-              "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\RailwayTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj"
+            "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\AviaTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj": {
+              "projectPath": "C:\\Users\\MI\\Documents\\=== 4 КУРС ===\\DOTNET\\AviaTicketsSalesManagement\\MiddlewareLibrary\\MiddlewareLibrary.csproj"
             }
           }
         }

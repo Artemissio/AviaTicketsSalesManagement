@@ -10,3 +10,15 @@ C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\RailwayTicketsSalesManagement\Mi
 C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\RailwayTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.dll
 C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\RailwayTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\ref\MiddlewareLibrary.dll
 C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\RailwayTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.pdb
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\bin\Debug\net5.0\MiddlewareLibrary.deps.json
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\bin\Debug\net5.0\MiddlewareLibrary.dll
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\bin\Debug\net5.0\ref\MiddlewareLibrary.dll
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\bin\Debug\net5.0\MiddlewareLibrary.pdb
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.csprojAssemblyReference.cache
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.AssemblyInfoInputs.cache
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.AssemblyInfo.cs
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.csproj.CoreCompileInputs.cache
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.dll
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\ref\MiddlewareLibrary.dll
+C:\Users\MI\Documents\=== 4 КУРС ===\DOTNET\AviaTicketsSalesManagement\MiddlewareLibrary\obj\Debug\net5.0\MiddlewareLibrary.pdb
