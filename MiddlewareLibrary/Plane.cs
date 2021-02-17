@@ -36,14 +36,14 @@ namespace MiddlewareLibrary
             return _places.AsReadOnly();
         }
 
-        public List<Place> GetFreePlaces()
+        public IReadOnlyList<Place> GetFreePlaces()
         {
-            return _places.Where(x => !x.IsBooked).ToList();
+            return _places.Where(x => !x.IsBooked).ToList().AsReadOnly();
         }
 
-        public List<Place> GetBookedPlaces()
+        public IReadOnlyList<Place> GetBookedPlaces()
         {
-            return _places.Where(x => x.IsBooked).ToList();
+            return _places.Where(x => x.IsBooked).ToList().AsReadOnly();
         }
     }
 }
