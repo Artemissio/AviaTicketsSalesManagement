@@ -12,7 +12,7 @@ namespace MiddlewareLibrary
 
         public Plane() : base()
         {
-            ID = "trains-" + Guid.NewGuid().ToString();
+            ID = "plane-" + Guid.NewGuid().ToString();
             _places = new List<Place>();
         }
 

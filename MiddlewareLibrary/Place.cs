@@ -17,9 +17,9 @@ namespace MiddlewareLibrary
             IsBooked = IsBought = false;
         }
 
-        public Place(Plane train, decimal price) : this()
+        public Place(Plane place, decimal price) : this()
         {
-            Plane = train;
+            Plane = place;
             Price = price;
         }
 
