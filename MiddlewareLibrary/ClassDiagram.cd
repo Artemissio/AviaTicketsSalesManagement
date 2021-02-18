@@ -1,35 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="MiddlewareLibrary.BookingSystem">
-    <Position X="2.5" Y="2.25" Width="10" />
+    <Position X="2.5" Y="1" Width="10" />
     <AssociationLine Name="_flights" Type="MiddlewareLibrary.Flight" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="2.5" Y="4.984" />
-        <Point X="2.312" Y="4.984" />
+        <Point X="2.5" Y="3.248" />
+        <Point X="2.312" Y="3.248" />
         <Point X="2.312" Y="6.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.811" Y="0.534" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="_planes" Type="MiddlewareLibrary.Plane" FixedToPoint="true">
-      <Path>
-        <Point X="12.188" Y="5.853" />
-        <Point X="12.188" Y="6.75" />
-      </Path>
+    <AssociationLine Name="_planes" Type="MiddlewareLibrary.Plane">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.142" Y="0.509" />
+        <Position X="0.509" Y="0.142" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAhRAQAAAAAqAAAAAAAAABgkBABAAQAAAAAAQ=</HashCode>
+      <HashCode>AAAACAAAhRAQAAAAAuAAACAAAAABgkREBAAQAAAAACQ=</HashCode>
       <FileName>BookingSystem.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="_customers" />
       <Field Name="_flights" />
       <Field Name="_planes" />
+      <Field Name="_customers" />
+      <Field Name="_endpoints" />
       <Property Name="Flights" />
+      <Property Name="Endpoints" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="MiddlewareLibrary.Endpoint">
@@ -53,8 +51,8 @@
       <FileName>Flight.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Departure" />
       <Property Name="Destination" />
+      <Property Name="Departure" />
     </ShowAsAssociation>
   </Class>
   <Class Name="MiddlewareLibrary.Place">
@@ -72,8 +70,8 @@
       <FileName>Place.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Customer" />
       <Property Name="Plane" />
+      <Property Name="Customer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="MiddlewareLibrary.Plane">
@@ -84,6 +82,10 @@
         <Point X="11.562" Y="6.375" />
         <Point X="7.083" Y="6.375" Type="JumpStart" />
         <Point X="6.917" Y="6.375" Type="JumpEnd" />
+        <Point X="5.521" Y="6.375" Type="JumpStart" />
+        <Point X="5.354" Y="6.375" Type="JumpEnd" />
+        <Point X="5.083" Y="6.375" Type="JumpStart" />
+        <Point X="4.917" Y="6.375" Type="JumpEnd" />
         <Point X="2.688" Y="6.375" />
         <Point X="2.688" Y="6.75" />
       </Path>
