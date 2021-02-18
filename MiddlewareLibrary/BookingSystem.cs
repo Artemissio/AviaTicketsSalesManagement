@@ -7,16 +7,42 @@ namespace MiddlewareLibrary
     public class BookingSystem
     {
         public IReadOnlyList<Flight> Flights => _flights.AsReadOnly();
+        public IReadOnlyList<Endpoint> Endpoints => _endpoints.AsReadOnly();
 
         private readonly List<Flight> _flights;
         private readonly List<Plane> _planes;
         private readonly List<User> _customers;
+        private readonly List<Endpoint> _endpoints;
 
         public BookingSystem()
         {
             _flights = new List<Flight>();
             _planes = new List<Plane>();
             _customers = new List<User>();
+            _endpoints = new List<Endpoint>();
+
+            _endpoints.AddRange(new List<Endpoint>
+            {
+                new Endpoint(),
+                new Endpoint("Kyiv"),
+                new Endpoint("Odessa"),
+            });
+
+            _flights.AddRange(new List<Flight> 
+            {
+                new Flight(),
+                new Flight("Paris-London"),
+                new Flight("Kyiv-Odessa", _endpoints[0], new DateTime(2021, 1, 18), _endpoints[1], new DateTime(2021, 1, 19))
+            });
+
+            _planes.AddRange(new List<Plane>
+            {
+                new Plane(),
+                new Plane(_flights[0], new List<Place>
+                {
+                    new Place()
+                })
+            });
         }
 
         public Flight GetFlight(int index)
@@ -50,6 +76,27 @@ namespace MiddlewareLibrary
         {
             RemoveFlight(id);
             AddFlight(flight);
+        }
+
+        public void AddEndpoint(Endpoint endpoint)
+        {
+            _endpoints.Add(endpoint);
+        }
+
+        public void RemoveEndpoint(string id)
+        {
+            var endpoint = _endpoints.FirstOrDefault(x => x.ID == id);
+
+            if (endpoint is not null)
+            {
+                _endpoints.Remove(endpoint);
+            }
+        }
+
+        public void EditEndpoint(string id, Endpoint endpoint)
+        {
+            RemoveEndpoint(id);
+            AddEndpoint(endpoint);
         }
 
         public List<Flight> GetFlightsByDeparture(Endpoint departure)
