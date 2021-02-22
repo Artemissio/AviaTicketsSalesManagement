@@ -43,6 +43,12 @@ namespace MiddlewareLibrary
                     new Place()
                 })
             });
+
+            _customers.AddRange(new List<User>
+            {
+                new User(),
+                new User("Artem", "Tarasenko", "artemissio", "pa$$w0rd")
+            });
         }
 
         public Flight GetFlight(int index)
