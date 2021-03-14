@@ -44,11 +44,7 @@ namespace MiddlewareLibrary
                 })
             });
 
-            _customers.AddRange(new List<User>
-            {
-                new User(),
-                new User("Artem", "Tarasenko", "artemissio", "pa$$w0rd")
-            });
+            Console.WriteLine("Booking system created");
         }
 
         public Flight GetFlight(int index)

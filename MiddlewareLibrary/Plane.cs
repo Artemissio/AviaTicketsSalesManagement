@@ -8,7 +8,7 @@ namespace MiddlewareLibrary
     {
         public Flight Flight { get; }
 
-        private List<Place> _places;
+        private readonly List<Place> _places;
 
         public Plane() : base()
         {
