@@ -25,5 +25,15 @@ namespace MiddlewareLibrary
             Login = login;
             Password = password;
         }
+
+        public static bool operator ==(User a, User b)
+        {
+            return a.Login == b.Login && a.Fullname == b.Fullname;
+        }
+
+        public static bool operator !=(User a, User b)
+        {
+            return a.Login != b.Login && a.Fullname != b.Fullname;
+        }
     }
 }

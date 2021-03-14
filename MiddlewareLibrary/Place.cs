@@ -5,7 +5,7 @@ namespace MiddlewareLibrary
     public class Place : Entity
     {
         public Plane Plane { get; }
-        public decimal Price { get; }
+        public decimal Price { get; set; }
         public bool IsBooked { get; private set; }
         public bool IsBought { get; private set; }
         public User Customer { get; private set; }
@@ -15,6 +15,34 @@ namespace MiddlewareLibrary
             ID = "place-" + Guid.NewGuid().ToString();
 
             IsBooked = IsBought = false;
+        }
+
+        public static Place operator ++(Place place)
+        {
+            place.Price++;
+            return place;
+        }
+
+        public static Place operator +(Place place, decimal add)
+        {
+            place.Price += add;
+            return place;
+        }
+
+        public static Place operator !(Place place)
+        {
+            place.CancelBooking();
+            return place;
+        }
+
+        public static bool operator >(Place a, Place b)
+        {
+            return a.Price > b.Price;
+        }
+
+        public static bool operator <(Place a, Place b)
+        {
+            return a.Price < b.Price;
         }
 
         public Place(Plane place, decimal price) : this()
