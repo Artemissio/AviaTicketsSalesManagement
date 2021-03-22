@@ -12,6 +12,18 @@
           "bin/placeholder/MiddlewareLibrary.dll": {}
         }
       }
+    },
+    "net5.0/win-x64": {
+      "MiddlewareLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MiddlewareLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiddlewareLibrary.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -89,6 +101,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

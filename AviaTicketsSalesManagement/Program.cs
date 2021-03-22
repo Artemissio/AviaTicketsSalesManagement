@@ -14,7 +14,29 @@ namespace RailwayTicketsSalesManagement
             Console.WriteLine(" ");
             Console.WriteLine("\tStarted creation of models: ");
 
-            _ = new BookingSystem();
+            IBookingSystem bookingSystem = new BookingSystem();
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("\t=== Testing interfaces ===");
+
+            Console.WriteLine("1. Creating endpoint: ");
+            Entity entity = new Endpoint("Test");
+            Console.WriteLine("ID: " + entity.ID);
+
+            IEntity copy = entity;
+
+            Console.WriteLine("2. Casting endpoint to Flight: ");
+            entity = new Flight("Kyiv - Lviv");
+            Console.WriteLine("Entity is now of type : " + entity.GetType().Name);
+            Console.WriteLine("ID: " + entity.ID);
+
+            Console.WriteLine("3. Entities are equal: " + copy.Equals(entity));
+
+            Console.WriteLine("4. Casting back: ");
+            entity = (Entity)copy;
+            Console.WriteLine("Entity is now of type : " + entity.GetType().Name);
+            Console.WriteLine("ID: " + entity.ID);
 
             Console.ReadKey();
         }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MiddlewareLibrary
 {
@@ -14,7 +13,6 @@ namespace MiddlewareLibrary
 
         public User() : base()
         {
-            ID = "user-" + Guid.NewGuid().ToString();
             BookedPlaces = new List<Place>();
         }
 

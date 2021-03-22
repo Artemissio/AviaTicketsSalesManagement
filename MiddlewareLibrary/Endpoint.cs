@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MiddlewareLibrary
+﻿namespace MiddlewareLibrary
 {
     public class Endpoint : Entity
     {
@@ -8,12 +6,19 @@ namespace MiddlewareLibrary
 
         public Endpoint() : base()
         {
-            ID = "endpoint-" + Guid.NewGuid().ToString();
+            ID = string.Empty;
         }
 
         public Endpoint(string name) : this()
         {
             Name = name;
+
+            ID = CreateID();
+        }
+
+        protected override string CreateID()
+        {
+            return $"endpoint-{Name}";
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace MiddlewareLibrary
 {
@@ -12,10 +10,7 @@ namespace MiddlewareLibrary
         public Endpoint Departure { get; set; }
         public DateTime DepartureTime { get; set; }
 
-        public Flight() : base()
-        {
-            ID = "passage-" + Guid.NewGuid().ToString();
-        }
+        public Flight() : base() { }
 
         public Flight(string name) : this()
         {

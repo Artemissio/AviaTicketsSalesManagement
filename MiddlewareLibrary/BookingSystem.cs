@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace MiddlewareLibrary
 {
-    public class BookingSystem
+    public class BookingSystem : IBookingSystem
     {
         public IReadOnlyList<Flight> Flights => _flights.AsReadOnly();
         public IReadOnlyList<Endpoint> Endpoints => _endpoints.AsReadOnly();
@@ -28,7 +28,7 @@ namespace MiddlewareLibrary
                 new Endpoint("Odessa"),
             });
 
-            _flights.AddRange(new List<Flight> 
+            _flights.AddRange(new List<Flight>
             {
                 new Flight(),
                 new Flight("Paris-London"),

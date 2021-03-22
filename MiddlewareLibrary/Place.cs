@@ -12,8 +12,6 @@ namespace MiddlewareLibrary
 
         public Place() : base()
         {
-            ID = "place-" + Guid.NewGuid().ToString();
-
             IsBooked = IsBought = false;
         }
 

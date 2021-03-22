@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace MiddlewareLibrary
@@ -12,7 +11,6 @@ namespace MiddlewareLibrary
 
         public Plane() : base()
         {
-            ID = "plane-" + Guid.NewGuid().ToString();
             _places = new List<Place>();
         }
 
