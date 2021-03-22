@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MiddlewareLibrary
 {
@@ -32,6 +33,11 @@ namespace MiddlewareLibrary
         public static bool operator !=(User a, User b)
         {
             return a.Login != b.Login && a.Fullname != b.Fullname;
+        }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine(Name);
         }
     }
 }

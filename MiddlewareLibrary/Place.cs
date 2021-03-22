@@ -80,5 +80,10 @@ namespace MiddlewareLibrary
             Customer = null;
             IsBought = IsBooked = false;
         }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine(ID);
+        }
     }
 }

@@ -12,6 +12,8 @@ namespace MiddlewareLibrary
             ID = CreateID();
         }
 
+        public abstract void DisplayName();
+
         protected virtual string CreateID()
         {
             return $"{GetType().Name.ToLower()}-{Guid.NewGuid()}";

@@ -1,4 +1,6 @@
-﻿namespace MiddlewareLibrary
+﻿using System;
+
+namespace MiddlewareLibrary
 {
     public class Endpoint : Entity
     {
@@ -19,6 +21,11 @@
         protected override string CreateID()
         {
             return $"endpoint-{Name}";
+        }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine(Name);
         }
     }
 }

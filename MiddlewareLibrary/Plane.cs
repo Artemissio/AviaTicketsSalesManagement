@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MiddlewareLibrary
@@ -42,6 +43,11 @@ namespace MiddlewareLibrary
         public IReadOnlyList<Place> GetBookedPlaces()
         {
             return _places.Where(x => x.IsBooked).ToList().AsReadOnly();
+        }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine($"{Flight.Departure}-{Flight.Destination}");
         }
     }
 }

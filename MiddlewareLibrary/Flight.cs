@@ -29,5 +29,10 @@ namespace MiddlewareLibrary
             Departure = departure;
             DepartureTime = departureTime;
         }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine(Name);
+        }
     }
 }
